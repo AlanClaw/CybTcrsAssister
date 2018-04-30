@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import logging
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
 from loc import TcrsControl as loc
@@ -14,7 +15,8 @@ class PageTcrs(object):
     PAGE_URL = "/TCRS/login.jsp"
 
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        # self.driver = webdriver.Chrome()
+        self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.base_url = TCRS_BASE_URL
         self.verificationErrors = []
@@ -111,7 +113,7 @@ class PageTcrs(object):
 
     def click_submit(self):
         driver = self.driver
-        driver.find_element_by_name("submit").click()
+        driver.find_element_by_name("submit2").click()
 
     def get_date_of_weekday(self, weekday):
         """

@@ -3,7 +3,7 @@
 import getpass
 
 from Control.TcrsAgent import Agent
-from Utils.LoggingHelper import *
+from utils.LoggingHelper import get_logger
 
 logger = get_logger('./logging.ini')
 

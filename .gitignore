@@ -143,3 +143,7 @@ modules.xml
 .idea/misc.xml
 *.ipr
 .idea/
+.vscode
+
+# Project Stuff
+Profile.ini

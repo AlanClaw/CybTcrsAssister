@@ -4,9 +4,9 @@ from datetime import datetime
 import time
 
 from TcrsDataCollection import WeekActivities
-from PageObject.PageTcrs import PageTcrs
+from CybTcrsAssister.PageObject.PageTcrs import PageTcrs
+from CybTcrsAssister.PageObject.loc.ActivityOption import activities_to_project
 import TcrsProfile
-from PageObject.loc.ActivityOption import activities_to_project
 
 
 class Agent(object):

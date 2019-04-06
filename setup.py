@@ -1,6 +1,5 @@
 from distutils.core import setup
 
-from setuptools import find_packages
 import sys
 import os
 
@@ -26,7 +25,7 @@ def main():
         package_dir={
             '': 'src',
         },
-        scripts=['chromedriver'],
+        scripts=['chromedriver', 'chromedriver.exe', 'geckodriver.exe'],
         install_requires=['numpy', 'selenium']
     )
 
